@@ -24,14 +24,16 @@ O sistema é composto por três principais componentes:
 4. **catalog-consumer**: As mensagens publicadas na fila são lidas por este sistema, lê as atualizações no banco de dados e publica o catalogo atualizado no bucket do S3.
 5. **Armazenamento no AWS S3**: O consumidor lê as mensagens da fila e atualiza um documento no AWS S3, refletindo o estado atual do catálogo.
 
-System design
-![system design](./resources/catalog-system-diagram.png)
-
-
 Cada componente do projeto é mantido em um repositório separado, mas este repositório principal serve como ponto de entrada para o projeto como um todo.
 
 - [Link catalog-api](https://github.com/Marco-Birman-Haiat/catalog-api)
 - [Link catalog-consumer](https://github.com/Marco-Birman-Haiat/catalog-consumer)
+
+
+### System Design
+![system design](./resources/catalog-system-diagram.png)
+
+
 
 ## Tecnologias Utilizadas
 
